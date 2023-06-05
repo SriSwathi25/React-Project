@@ -15,6 +15,7 @@ const UserForm = (props)=>{
             const obj = {};
             obj.username = nameVal;
             obj.age = ageVal;
+            obj.id = Math.random();
             props.addDataHandler(obj);
             setUsername("");
             setAge("");

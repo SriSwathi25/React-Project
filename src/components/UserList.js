@@ -5,7 +5,7 @@ import UserItem from "./UserItem";
     <h1> User List </h1>
     <ul>
     {
-        props.data.map((d)=><UserItem username={d.username} age={d.age} key={Math.random()} />)
+        props.data.map((d)=><UserItem username={d.username} age={d.age} key={d.id} />)
     }
     </ul>
     
