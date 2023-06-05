@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import classes from "./form.module.css";
 const UserForm = (props)=>{
 
         const [username, setUsername] = useState("");
@@ -22,7 +23,7 @@ const UserForm = (props)=>{
         }
 return (
 
-    <div>
+    <div className={classes.form}>
         <h1>User Form</h1>
         <form onSubmit={sendData}>
             Name : <input type="text" name="username" value={username} onChange={(e)=>(setUsername(e.target.value))} />
